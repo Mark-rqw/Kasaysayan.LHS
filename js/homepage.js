@@ -26,6 +26,15 @@ function loadPage(page) {
         .catch(error => console.error("Error loading page:", error));
 }
 
+
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/sw.js")
+                .then((reg) => console.log("Service Worker Registered!", reg))
+                .catch((err) => console.error("Service Worker Registration Failed!", err));
+        });
+    }
+
 function toggleNav() {
     let navBar = document.querySelector(".sidebar");
     navBar.classList.toggle("shownav");
