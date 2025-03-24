@@ -1,0 +1,36 @@
+<div id="pageContent"></div>
+
+<nav>
+    <button onclick="loadPage('home')">Home</button>
+    <button onclick="loadPage('about')">About</button>
+</nav>
+
+<script>
+function loadPage(page) {
+    fetch(`${page}.html`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("pageContent").innerHTML = data;
+
+            // Remove existing CSS and load new CSS
+            const existingCSS = document.getElementById("dynamicCSS");
+            if (existingCSS) existingCSS.remove();
+
+            const cssLink = document.createElement("link");
+            cssLink.id = "dynamicCSS";
+            cssLink.rel = "stylesheet";
+            cssLink.href = `homepage.css`;
+            document.head.appendChild(cssLink);
+
+            // Remove existing JS and load new JS
+            const existingJS = document.getElementById("dynamicJS");
+            if (existingJS) existingJS.remove();
+
+            const script = document.createElement("script");
+            script.id = "dynamicJS";
+            script.src = `homepage.js`;
+            document.body.appendChild(script);
+        })
+        .catch(error => console.error("Error loading page:", error));
+}
+</script>

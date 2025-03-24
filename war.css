@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    
+}
+
+body{
+    max-height: 100vh;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70%;
+    background-color:white;
+    box-shadow: -10px 0px 30px;
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 99;
+    transition: transform 0.5s ease, opacity 0.5s ease
+}
+
+.shownav{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.sidebar ul{
+  width: 100%;
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.sidebar a{
+    padding: 5%;
+    font-size: 2rem;
+    display: flex;
+   font-weight: 500;
+   font-size: 30px;
+   list-style-type: none;
+   text-decoration: none;
+   color: black;
+}
+
+.sidebar li{
+    padding: 5%;
+ 
+}
+
+.sidebar li:hover{
+    background-color:  hsla(0, 12%, 92%, 0.733);
+    border-radius: 0.75rem;
+}
+
+.menu-btn{
+    height: 6vh;
+    margin: 1rem;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 99;
+    position: fixed;
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.scrolled {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.exit-btn{
+    height: 6vh;
+    position: absolute;
+    right: 0;
+    margin: 0.75rem;
+
+}
+
+.main-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+.ctnr-1-war, .ctnr-2-war, .ctnr-3-war{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: grey;
+    border-radius: 1rem;
+    height: 50vh;
+    width: 94%;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-height: 926px) and (max-width: 480px){
+    body{
+    max-height: 100vh;
+}
+}

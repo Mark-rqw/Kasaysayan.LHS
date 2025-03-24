@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasaysayan</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <div id="pageContent">
+    <div class="topNav">  
+      <img src="images/menu.png"  class="menu-btn" onclick="toggleNav()">
+     <h1 onclick="loadPage('homepage')" class="logo">HOME</h1>
+      </div>
+  <div class="sidebar">
+    <img src="images/ekis.png" class="exit-btn" onclick="toggleNav()">
+    <ul>
+      <li><a href="#" onclick="event.preventDefault(); loadPage('timeline')">Facts & Trivia</a></li>
+      <li><a href="#" onclick="event.preventDefault(); loadPage('quiz')">Quizzes</a></li>
+      <li><a href="#" onclick="event.preventDefault(); loadPage('Fil-Figures')">Filipino Figures</a></li>
+      <li><a href="#" onclick="event.preventDefault(); loadPage('category')">Category</a></li>
+      <li><a href="#" onclick="event.preventDefault(); loadPage('about')">About Us</a></li>
+    </ul>
+  </div>
+ <div class="main-container">
+  <div class="notification">
+    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quis dignissimos ex earum fugiat autem, n
+      am eveniet nostrum totam vero voluptate qui cupiditate deleniti laudantium optio dicta minima iusto quaerat.</p>
+  </div>
+        <div class="war">
+          <div class="darken"></div>
+           <h1 style="z-index: 2;">PHILIPPINE REPUBLIC PERIOD</h1>
+            <p style="z-index: 2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique eaque ducimus saepe sit blanditiis officia cum tempora. Natus sapiente blanditiis, repudiandae officia nobis neque minima quia porro deleniti. Hic?</p>
+        </div>
+  </div>
+  <div class="desc-home">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum error corrupti, aperiam fuga neque facere ad, perspiciatis quis modi nisi accusamus vero dolorum reprehenderit deleniti, iste repellat mollitia tempora.</p>
+    <button onclick="notify()">Notify!</button>
+  </div>
+</div>
+<script src="homepage.js"></script>
+
+</body>
+</html>

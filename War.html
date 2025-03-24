@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="war.css">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+</head>
+<body>
+    <div id="pageContent">
+        <img src="images/menu.png"  class="menu-btn" onclick="toggleNav()">
+        <center><h1 onclick="loadPage('homepage')">HOME</h1></center>
+    <div class="sidebar">
+        <img src="images/ekis.png" class="exit-btn" onclick="toggleNav()">
+        <ul>
+            <li><a href="#" onclick="loadPage('timeline')">Timeline</a></li>
+            <li><a href="#" onclick="loadPage('Fil-Figures')">Filipino Figures</a></li>
+            <li><a href="#" onclick="loadPage('category')">Category</a></li>
+            <li><a href="#" onclick="loadPage('about')">About Us</a></li>
+        </ul>
+    </div>
+    <button class="backBtn" onclick="loadPage('category')">Back</button>
+   <div class="main-container">
+   
+        <div class="ctnr-1-war">
+            <h1 style="text-align: center;">Spanish Conquest & Resistance </h1>
+            <h2>(1521 - 1898)</h2>
+        </div>
+        <div class="ctnr-2-war">
+            <h1 style="text-align: center;">Philippine-American War</h1>
+            <h2>(1899 - 1902)</h2>
+        </div>
+        <div class="ctnr-3-war">
+            <h1 style="text-align: center;">World War II & Japanese Occupation</h1>
+            <h2>(1941 - 1945)</h2>
+        </div>
+   </div>
+   </div>
+<script src="category.js"></script>
+</body>
+</html>
