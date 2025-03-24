@@ -2,7 +2,7 @@
     "name": "Kasaysayan",
     "short_name": "Kasaysayan",
     "description": "Learn Philippine history with notification feature!",
-    "start_url": "homepage.html",
+    "start_url": "index.html",
     "scope": "/",
     "display": "standalone",
     "background_color": "#ffffff",
