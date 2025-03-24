@@ -161,7 +161,7 @@ img{
     background-size: cover;
 }
 .ctnr-2{
-    background-image: url(assets/images/juanLuna.jpg);
+    background-image: url("assets/images/juanLuna.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
