@@ -11,7 +11,7 @@ function loadPage(page) {
             const cssLink = document.createElement("link");
             cssLink.id = "dynamicCSS";
             cssLink.rel = "stylesheet";
-            cssLink.href = `${page}.css`;
+            cssLink.href = `css/${page}.css`;
             document.head.appendChild(cssLink);
 
          
@@ -20,7 +20,7 @@ function loadPage(page) {
 
             const script = document.createElement("script");
             script.id = "dynamicJS";
-            script.src = `${page}.js`;
+            script.src = `js/${page}.js`;
             document.body.appendChild(script);
         })
         .catch(error => console.error("Error loading page:", error));
