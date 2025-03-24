@@ -1,7 +1,7 @@
 const CACHE_NAME = "kasaysayan-cache-v1";
 const urlsToCache = [
     "/",                        // Root path (important for start_url)
-    "/homepage.html",           // Main page
+    "/index.html",           // Main page
     "/Fil-Figures.html",        // Filipino figures page
     "/category.html",           // Category page
     "/timeline.html",           // Timeline page
@@ -52,6 +52,8 @@ self.addEventListener("install", (event) => {
         })
     );
 });
+
+
 
 // Activate Service Worker
 self.addEventListener("activate", (event) => {
