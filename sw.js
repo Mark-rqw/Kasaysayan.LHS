@@ -19,7 +19,7 @@ const urlsToCache = [
     "/css/about.css",
 
     // JavaScript files
-    "/js/homepage.js",
+    "/js/index.js",
     "/js/fil-figures.js",
     "/js/category.js",
     "/js/timeline.js",
