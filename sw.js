@@ -30,7 +30,8 @@ const urlsToCache = [
     "assets/kasaysayan-logo.png",
     "assets/images/Art.jpg",
     "assets/images/emilio.jpg",
-    "assets/images/joseRizal.jpg"
+    "assets/images/joseRizal.jpg",
+    "assets/images/PRP.jpg"
 ];
 
 // Register service worker and cache assets

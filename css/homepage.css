@@ -128,7 +128,7 @@ body{
 
 .war{
     position: relative;
-    background-image: url("assets/images/PRP.jpg");
+    background-image: url('assets/images/PRP.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
