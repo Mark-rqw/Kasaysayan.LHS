@@ -155,19 +155,19 @@ img{
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .ctnr-1{
-    background-image: url(assets/images/joseRizal.jpg);
+    background-image: url('../assets/images/joseRizal.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .ctnr-2{
-    background-image: url("assets/images/juanLuna.jpg");
+    background-image: url("../assets/images/juanLuna.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .ctnr-3{
-    background-image: url(assets/images/emilio.jpg);
+    background-image: url('../assets/images/emilio.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

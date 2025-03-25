@@ -29,6 +29,9 @@ const urlsToCache = [
     "assets/Kasaysayan_logo.png",
     "assets/kasaysayan-logo.png",
     "assets/images/Art.jpg",
+    "assets/images/war.jpg",
+    "assets/images/literature.jpg",
+    "assets/images/juanLuna.jpg",
     "assets/images/emilio.jpg",
     "assets/images/joseRizal.jpg",
     "assets/images/PRP.jpg"

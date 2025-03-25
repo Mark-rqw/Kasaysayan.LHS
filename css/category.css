@@ -151,20 +151,20 @@ body{
     visibility: visible;
 }
 .ctnr-1{
-    background-image: url(assets/images/war.jpg);
+    background-image: url('../assets/images/war.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3 ease-in-out;
 }
 .ctnr-2{
-    background-image: url(assets/images/literature.jpg);
+    background-image: url('../assets/images/literature.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .ctnr-3{
-    background-image: url(assets/images/Art.jpg);
+    background-image: url('../assets/images/Art.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
