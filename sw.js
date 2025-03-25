@@ -1,3 +1,26 @@
+importScripts("https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js");
+
+// Initialize Firebase in Service Worker
+firebase.initializeApp({
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
+});
+
+const messaging = firebase.messaging();
+
+// Handle Background Messages
+messaging.onBackgroundMessage((payload) => {
+    console.log("Background message received: ", payload);
+    self.registration.showNotification(payload.notification.title, {
+        body: payload.notification.body,
+        icon: "/assets/Kasaysayan_logo.png"
+    });
+});
+
 const CACHE_NAME = "kasaysayan-cache-v1";
 const urlsToCache = [
     "index.html",
