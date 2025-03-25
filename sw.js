@@ -11,7 +11,7 @@ const urlsToCache = [
 
     // CSS Files
     "css/homepage.css",
-    "css/Fil-figures.css",
+    "css/Fil-Figures.css",
     "css/category.css",
     "css/timeline.css",
     "css/quiz.css",
@@ -19,7 +19,7 @@ const urlsToCache = [
 
     // JS Files
     "js/index.js",
-    "js/fil-figures.js",
+    "js/Fil-Figures.js",
     "js/category.js",
     "js/timeline.js",
     "js/quiz.js",
