@@ -11,7 +11,7 @@ const urlsToCache = [
 
     // CSS Files
     "css/homepage.css",
-    "css/fil-figures.css",
+    "css/Fil-figures.css",
     "css/category.css",
     "css/timeline.css",
     "css/quiz.css",
