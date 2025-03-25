@@ -4,6 +4,10 @@
 // Firebase server key (replace this with your actual server key from FCM settings)
 $serverKey = "BO2KHuS3C48Q5cD5Ov8pzg4YtnYfsJhtebO92cufVdJsO7PnOvok0RrPJGncUvB5ZYFKdinuLap_r855UD_cdYo";
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405); // Method Not Allowed
+    exit('Invalid request method.');
+}
 // Check if the request is POST and contains the required fields
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['title']) && isset($_POST['body'])) {
 
