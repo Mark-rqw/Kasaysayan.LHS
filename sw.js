@@ -1,49 +1,39 @@
 const CACHE_NAME = "kasaysayan-cache-v1";
 const urlsToCache = [
-    "/",                        // Root path (important for start_url)
-    "/index.html",           // Main page
-    "/Fil-Figures.html",        // Filipino figures page
-    "/category.html",           // Category page
-    "/timeline.html",           // Timeline page
-    "/quiz.html",               // Quiz page
-    "/about.html",              // About page
-    "/manifest.json",           // Manifest (for installable PWA)
-    "/sw.js",                   // Service worker itself
+    "index.html",
+    "Fil-Figures.html",
+    "category.html",
+    "timeline.html",
+    "quiz.html",
+    "about.html",
+    "manifest.json",
+    "sw.js",
 
-    // CSS files
-    "/css/homepage.css",
-    "/css/fil-figures.css",
-    "/css/category.css",
-    "/css/timeline.css",
-    "/css/quiz.css",
-    "/css/about.css",
+    // CSS Files
+    "css/homepage.css",
+    "css/fil-figures.css",
+    "css/category.css",
+    "css/timeline.css",
+    "css/quiz.css",
+    "css/about.css",
 
-    // JavaScript files
-    "/js/index.js",
-    "/js/fil-figures.js",
-    "/js/category.js",
-    "/js/timeline.js",
-    "/js/quiz.js",
-    "/js/about.js",
+    // JS Files
+    "js/index.js",
+    "js/fil-figures.js",
+    "js/category.js",
+    "js/timeline.js",
+    "js/quiz.js",
+    "js/about.js",
 
-    // Icons (for PWA installation)
-    "/assets/Kasaysayan_logo.png",
-    "/assets/kasaysayan-logo.png",
-
-    // Images (cache only essential images if needed for offline use)
-    "/assets/images/Art.jpg",
-    "/assets/images/ekis.png",
-    "/assets/images/emilio.jpg",
-    "/assets/images/joseRizal.jpg",
-    "/assets/images/juanLuna.jpg",
-    "/assets/images/literature.jpg",
-    "/assets/images/menu.png",
-    "/assets/images/OoatNaBlack.png",
-    "/assets/images/PRP.jpg",
-    "/assets/images/war.jpg"
+    // Icons and Images
+    "assets/Kasaysayan_logo.png",
+    "assets/kasaysayan-logo.png",
+    "assets/images/Art.jpg",
+    "assets/images/emilio.jpg",
+    "assets/images/joseRizal.jpg"
 ];
 
-// Install Service Worker
+// Register service worker and cache assets
 self.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
@@ -53,9 +43,7 @@ self.addEventListener("install", (event) => {
     );
 });
 
-
-
-// Activate Service Worker
+// Clear old caches
 self.addEventListener("activate", (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {
@@ -71,7 +59,7 @@ self.addEventListener("activate", (event) => {
     );
 });
 
-// Fetch Event (Serve cached assets)
+// Fetch and serve cached content
 self.addEventListener("fetch", (event) => {
     event.respondWith(
         caches.match(event.request).then((response) => {
