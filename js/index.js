@@ -11,7 +11,7 @@ function loadPage(page) {
             const cssLink = document.createElement("link");
             cssLink.id = "dynamicCSS";
             cssLink.rel = "stylesheet";
-            cssLink.href = `css/${page}.css`;
+            cssLink.href = `/Kasaysayan.LHS/css/${page}.css`;
             document.head.appendChild(cssLink);
 
          
@@ -20,7 +20,7 @@ function loadPage(page) {
 
             const script = document.createElement("script");
             script.id = "dynamicJS";
-            script.src = `js/${page}.js`;
+            script.src = `/Kasaysayan.LHS/js/${page}.js`;
             script.defer = true;
             document.body.appendChild(script);
         })
