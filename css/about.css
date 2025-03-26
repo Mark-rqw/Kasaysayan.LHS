@@ -31,7 +31,7 @@ body{
     left: 0;
     z-index: 98;
     transition: box-shadow 0.3s ease-in-out;
-    height: 7vh;
+    height: 6vh;
 }
 
 .sidebar{

@@ -9,8 +9,11 @@
     
 }
 
-body{
-    min-height: 100vh;
+#pageContent{
+    height: 200vh;
+}
+#pageContent{
+    position: relative;
 }
 .logo {
     margin-left: auto;
@@ -21,9 +24,6 @@ body{
     -webkit-tap-highlight-color: transparent;
 }
 
-#pageContent{
-    position: relative;
-}
 
 .topNav {
     display: flex;
@@ -37,7 +37,7 @@ body{
     left: 0;
     z-index: 98;
     transition: box-shadow 0.3s ease-in-out;
-    height: 7vh;
+    height: 6vh;
 }
 
 .scrolled {
