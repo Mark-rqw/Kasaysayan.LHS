@@ -10,6 +10,26 @@
 body{
     max-height: 100vh;
 }
+.logo {
+    margin-left: auto;
+    color:#333;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    transition: box-shadow 0.3s ease-in-out;
+}
 
 .sidebar{
     position: fixed;

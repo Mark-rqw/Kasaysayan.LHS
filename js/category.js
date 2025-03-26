@@ -102,3 +102,4 @@ window.addEventListener("scroll", function () {
         element.classList.remove("scrolled");
     }
 });
+

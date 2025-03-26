@@ -9,6 +9,15 @@
 #pageContent{
     height: 200vh;
 }
+
+.logo {
+    margin-left: auto;
+    color:#333;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
 .topNav {
     display: flex;
     align-items: center;
