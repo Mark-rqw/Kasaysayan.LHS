@@ -158,13 +158,13 @@ body{
     transition: all 0.3 ease-in-out;
 }
 .ctnr-2{
-    background-image: url('Kasaysayan.LHS/assets/images/literature.jpg');
+    background-image: url('/Kasaysayan.LHS/assets/images/literature.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .ctnr-3{
-    background-image: url('Kasaysayan.LHS/assets/images/Art.jpg');
+    background-image: url('/Kasaysayan.LHS/assets/images/Art.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
