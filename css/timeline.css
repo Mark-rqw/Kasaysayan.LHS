@@ -8,7 +8,7 @@
 }
 
 #pageContent{
-    height: 200vh;
+    height: 120vh;
 }
 .logo {
     margin-left: auto;
@@ -110,6 +110,51 @@
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
+    gap: 1rem;
+    padding-top: 4rem;
+    position: relative;
+}
+.main-clicked{
+    padding-top: 2rem;
+}
+
+.fact-1, .fact-2, .fact-3, .fact-4{
+    padding: 1rem;
+    transition: height 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+    overflow: hidden;
+    height: 20vh;
+}
+
+.fact-1 a, .fact-2 a, .fact-3 a, .fact-4 a{
+    text-align: right;
+    display: block;
+    margin-top: 0.75rem;
+}
+
+.more-desc{
+    opacity: 0;
+    display: none;
+}
+
+/* .fact-1{
+    transition: height 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+    overflow: hidden;
+    height: 20vh;
+} */
+
+
+.fact-clicked, .fact-clicked2, .fact-clicked3, .fact-clicked4 {
+    height: 80vh;
+    padding: 1.5rem;
+    background-color: rgba(131, 129, 129, 0.555);
+    margin: 1rem;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 20px rgba(63, 62, 62, 0.562);
+}
+
+.show-desc, .show-desc2, .show-desc3, .show-desc4{
+    opacity: 1;
+    display: block;
 }
 
 @media screen and (max-height: 926px) and (max-width: 480px){

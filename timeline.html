@@ -9,11 +9,11 @@
 <body>
     <div id="pageContent">
         <div class="topNav">
-            <img src="images/menu.png"  class="menu-btn" onclick="toggleNav()">
+            <img src="assets/images/menu.png"  class="menu-btn" onclick="toggleNav()">
            <h1 onclick="loadPage('index')" class="logo">HOME</h1>
             </div>
     <div class="sidebar">
-        <img src="images/ekis.png" class="exit-btn" onclick="toggleNav()">
+        <img src="assets/images/ekis.png" class="exit-btn" onclick="toggleNav()">
         <ul>
             <li><a href="#" onclick="loadPage('timeline')">Facts & Trivia</a></li>
             <li><a href="#" onclick="event.preventDefault(); loadPage('quiz')">Quizzes</a></li>
@@ -23,10 +23,69 @@
         </ul>
     </div>
    <div class="main-container">
-     
+       <div class="fact-1" id="fact-1">
+           <h1 onclick="factClicked()">Did you know?</h1>
+        <h3>supporting title. Overview of the article</h3><br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quis eligendi, doloribus quid
+            em magni nemo, officia dicta, dignissimos similique aliquam placeat mollitia nulla esse velit ipsum quas consequuntur laudantium omnis!</p><br>
+             <p  class="more-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit vitae, voluptatem duc
+                imus veritatis vero, officiis aperiam architecto blanditiis corporis eveniet maxime illo, neque exercitationem harum incidunt. Neque rem distinctio nam
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit? Voluptas accusantium praesentium obcaecati sit libero laudantium quasi. Quo enim iste quidem ipsa repudiandae veritatis veniam non sint necessitatibus incidunt!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repellat dicta cum nulla nemo reprehenderit consequatur, quae, blanditiis beatae error veritatis provident? Rem hic nostrum aperiam illo sint odio reprehenderit?
+            </p> 
+            <a href="https://history.state.gov/milestones/1899-1913/war" target="_blank" rel="noopener noreferrer">
+                Read full article
+            </a>
+     </div>
+     <div class="fact-2">
+        <h1 onclick="factClicked2()">Did You Know?</h1>
+        <h3>supporting title. Overview of the article</h3><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur distinctio q
+            uaerat, obcaecati voluptatibus facere, doloremque soluta nihil, sunt ullam exercitationem aliquid quam modi totam incidunt? Maxime voluptatum aperiam animi suscipit!</p>
+            <p  class="more-desc2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit vitae, voluptatem duc
+                imus veritatis vero, officiis aperiam architecto blanditiis corporis eveniet maxime illo, neque exercitationem harum incidunt. Neque rem distinctio nam
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit? Voluptas accusantium praesentium obcaecati sit libero laudantium quasi. Quo enim iste quidem ipsa repudiandae veritatis veniam non sint necessitatibus incidunt!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repellat dicta cum nulla nemo reprehenderit consequatur, quae, blanditiis beatae error veritatis provident? Rem hic nostrum aperiam illo sint odio reprehenderit?
+            </p> 
+            <a href="https://www.tandfonline.com/doi/full/10.1080/03086534.2021.1957502" target="_blank" rel="noopener noreferrer">
+                Read article
+            </a>
+     </div>
+     <div class="fact-3">
+        <h1 onclick="factClicked3()">Fact no. 3</h1>
+        <h3>supporting title. Overview of the article</h3><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus alias ab molestias quia
+             aperiam laborum veritatis quos. Accusamus reiciendis voluptatum ipsam quos odio! Iste minima magnam sequi qui unde est!</p>
+             <p  class="more-desc3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit vitae, voluptatem duc
+                imus veritatis vero, officiis aperiam architecto blanditiis corporis eveniet maxime illo, neque exercitationem harum incidunt. Neque rem distinctio nam
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit? Voluptas accusantium praesentium obcaecati sit libero laudantium quasi. Quo enim iste quidem ipsa repudiandae veritatis veniam non sint necessitatibus incidunt!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repellat dicta cum nulla nemo reprehenderit consequatur, quae, blanditiis beatae error veritatis provident? Rem hic nostrum aperiam illo sint odio reprehenderit?
+            </p> 
+             <a href="https://www.jstor.org/journal/philstud" target="_blank" rel="noopener noreferrer">
+                Read article
+            </a>
+     </div>
+     <div class="fact-4">
+        <h1 onclick="factClicked4()">Fact no. 4</h1>
+        <h3>supporting title. Overview of the article</h3><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut mollitia aperiam omnis neque,
+             doloribus explicabo error, officiis recusandae illum tempore ea minus et! Ipsum voluptates inventore dolorem doloribus sit.</p>
+             <p  class="more-desc4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit vitae, voluptatem duc
+                imus veritatis vero, officiis aperiam architecto blanditiis corporis eveniet maxime illo, neque exercitationem harum incidunt. Neque rem distinctio nam
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit? Voluptas accusantium praesentium obcaecati sit libero laudantium quasi. Quo enim iste quidem ipsa repudiandae veritatis veniam non sint necessitatibus incidunt!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repellat dicta cum nulla nemo reprehenderit consequatur, quae, blanditiis beatae error veritatis provident? Rem hic nostrum aperiam illo sint odio reprehenderit?
+            </p> 
+             <a href="https://ncca.gov.ph/about-ncca-3/subcommissions/subcommission-on-cultural-heritagesch/historical-research/history-of-the-philippine-revolution/" target="_blank" rel="noopener noreferrer">
+                Read article
+            </a>
+     </div>
         
    </div>
    </div>
-<script src="js/category.js"></script>
+<script src="js/timeline.js"></script>
 </body>
 </html>

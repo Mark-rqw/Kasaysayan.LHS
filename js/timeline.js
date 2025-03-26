@@ -39,3 +39,36 @@ window.addEventListener("scroll", function () {
         element.classList.remove("scrolled");
     }
 });
+
+function factClicked(){
+    let fact = document.querySelector('.fact-1');
+    let desc = document.querySelector('.more-desc');
+
+    fact.classList.toggle('fact-clicked');
+    desc.classList.toggle('show-desc');
+}
+function factClicked2(){
+    let fact = document.querySelector('.fact-2');
+    let desc = document.querySelector('.more-desc2');
+
+    fact.classList.toggle('fact-clicked2');
+    desc.classList.toggle('show-desc2');
+}
+
+function factClicked3(){
+    let fact = document.querySelector('.fact-3');
+    let desc = document.querySelector('.more-desc3');
+
+    fact.classList.toggle('fact-clicked3');
+    desc.classList.toggle('show-desc4');
+}
+
+function factClicked4(){
+    let fact = document.querySelector('.fact-4');
+    let desc = document.querySelector('.more-desc4');
+
+    fact.classList.toggle('fact-clicked4');
+    desc.classList.toggle('show-desc4');
+}
+
+

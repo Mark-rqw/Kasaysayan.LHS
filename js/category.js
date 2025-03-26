@@ -62,6 +62,7 @@ function toggledesc2(){
     title.classList.toggle('hideTitle');
     btn.classList.add('showBtn');
 }
+
 function hideDesc2(){
     let hideDesc = document.querySelector('.desc2');
     let showtitle = document.querySelector('.title2');
