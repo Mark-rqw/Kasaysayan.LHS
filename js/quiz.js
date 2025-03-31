@@ -3,7 +3,7 @@ let score = 0; // To keep track of the user's score
 
 // Load the question from the server
 function loadQuestion() {
-    fetch('quiz.php', {
+    fetch('../php/quiz.php', {
         method: 'POST',
         body: new URLSearchParams({ 'action': 'get_question', 'index': currentQuestionIndex }) // Send the current question index to get the corresponding question
     })
@@ -38,7 +38,7 @@ document.getElementById('quizForm').addEventListener('submit', function (e) {
     }
 
     // Send the selected answer to the server to check if it's correct
-    fetch('quiz.php', {
+    fetch('../php/quiz.php', {
         method: 'POST',
         body: new URLSearchParams({ 'action': 'submit_answer', 'answer': selectedAnswer })
     })
