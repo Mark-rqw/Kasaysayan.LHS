@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasaysayan</title>
-  <!-- <link rel="stylesheet" href="css/quiz.css"> -->
+    <title>Quiz</title>
+    <script src="js/quiz.js"></script> <!-- Link to your quiz.js -->
 </head>
 <body>
-  <div id="pageContent">
-    <div class="topNav">  
-      <img src="assets/images/menu.png"  class="menu-btn" onclick="toggleNav()">
-     <h1 onclick="loadPage('index')" class="logo">HOME</h1>
-      </div>
-  <div class="sidebar">
-    <img src="assets/images/ekis.png" class="exit-btn" onclick="toggleNav()">
-    <ul>
-      <li><a href="#" onclick="event.preventDefault(); loadPage('timeline')">Facts & Trivia</a></li>
-      <li><a href="#" onclick="event.preventDefault(); loadPage('quiz')">Quizzes</a></li>
-      <li><a href="#" onclick="event.preventDefault(); loadPage('Fil-Figures')">Filipino Figures</a></li>
-      <li><a href="#" onclick="event.preventDefault(); loadPage('category')">Category</a></li>
-      <li><a href="#" onclick="event.preventDefault(); loadPage('about')">About Us</a></li>
-    </ul>
-  </div>
- <div class="main-container">
-  <h3 id="question"></h3>
-  <form id="quizForm">
-      <div id="answers"></div>
-      <button type="submit">Next Question</button>
-  </form>
-      </div>
-        </div>
-     
-<script src="js/quiz.js"></script>
+    <h2>Quiz</h2>
 
+    <div id="question-container">
+        <!-- Question and answers will be dynamically loaded here -->
+    </div>
+
+    <button id="next-button" onclick="nextQuestion()">Next Question</button>
+
+    <p>Score: <span id="score">0</span></p>
+
+    <p><a href="login.html">Log Out</a></p> <!-- Log out link -->
 </body>
 </html>

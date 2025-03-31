@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     .then(response => response.json())
     .then(data => {
         if (data.status === 'success') {
-            window.location.href = 'quiz.html'; // Redirect to quiz page
+            window.location.href = '/Kasaysayan.LHS/quiz.html'; // Redirect to quiz page
         } else {
             alert(data.message);
         }
