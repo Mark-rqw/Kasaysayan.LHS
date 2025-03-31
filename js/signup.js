@@ -4,7 +4,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    fetch('signup.php', {
+    fetch('../php/signup.php', {
         method: 'POST',
         body: new URLSearchParams({
             'username': username,
