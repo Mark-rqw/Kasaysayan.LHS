@@ -59,5 +59,8 @@ document.getElementById('quizForm').addEventListener('submit', function (e) {
     .catch(error => console.error('Error:', error));
 });
 
+document.getElementById('score').innerText = score; // Update the displayed score
+
+
 // Initial call to load the first question
 loadQuestion();
